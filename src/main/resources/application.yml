@@ -1,0 +1,19 @@
+server:
+  port: 7654
+
+spring:
+  application:
+    name: hello-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  tracing:
+    sampling:
+      probability: 1.0
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true

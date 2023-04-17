@@ -1,0 +1,13 @@
+traces:
+  configs:
+    - name: grafanacloud-vladoleniuk-traces
+      remote_write:
+        - endpoint: tempo-eu-west-0.grafana.net:443
+          basic_auth:
+            username: 371329
+            password: eyJrIjoiMGEwMTM3ZmE4MTJhODdkODZlNmE1NDEyNDVjYjY2NTJmMDFjZTlkMSIsIm4iOiJ0ZW1wbyIsImlkIjo3ODUzODl9
+      receivers:
+        zipkin:
+      batch:
+        timeout: 1s
+        send_batch_size: 100
