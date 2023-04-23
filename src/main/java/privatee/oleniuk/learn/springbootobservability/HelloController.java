@@ -25,6 +25,7 @@ public class HelloController {
     public String hello() {
         log.info("Got a request");
         return service.hello();
+//        throw new IllegalArgumentException();
     }
 
 }

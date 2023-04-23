@@ -48,11 +48,15 @@
 			<artifactId>micrometer-tracing-bridge-otel</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>io.opentelemetry</groupId>
-			<artifactId>opentelemetry-exporter-zipkin</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>io.opentelemetry</groupId>-->
+<!--			<artifactId>opentelemetry-exporter-zipkin</artifactId>-->
+<!--		</dependency>-->
 
+				<dependency>
+					<groupId>io.opentelemetry</groupId>
+					<artifactId>opentelemetry-exporter-otlp</artifactId>
+				</dependency>
 
 		<dependency>
 			<groupId>com.github.loki4j</groupId>

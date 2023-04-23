@@ -14,6 +14,7 @@ public class HelloService {
     public String hello() {
         Observation observation = observationRegistry.getCurrentObservation();
         observation.event(Observation.Event.of("Greeting to vlad sent"));
+        observation.error(new IllegalArgumentException("Something went wrong"));
         return "Hello Vlad...";
     }
 
