@@ -5,7 +5,7 @@ spring:
   application:
     name: hello-server
   kafka:
-    bootstrap-servers: 172.17.0.2:46681
+    bootstrap-servers: localhost:40233
     consumer:
       group-id: hello-server
 

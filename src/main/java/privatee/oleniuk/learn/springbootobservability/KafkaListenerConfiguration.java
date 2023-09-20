@@ -4,7 +4,7 @@ import io.micrometer.observation.annotation.Observed;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class KafkaListenerConfiguration {
 
     @KafkaListener(
